@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Animated Colorful Background */
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 300% 300%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff4081;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ff4081;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Joyful Welcome Section */
+.welcome-section {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+    color: #4a148c;
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+    animation: fadeIn 2s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff4081;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ffeb3b;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #ff4081;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+}
+
+/* Bouncy Button */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(135deg, #ffeb3b, #ff4081);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff4081, #ffeb3b);
+    transform: scale(1.1);
+}
+
+/* Student List */
+#studentList {
+    list-style-type: none;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 0;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+#studentList li {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color: #d81b60;
+    transform: scale(1.1);
+}
+
+/* Floating Shapes for Fun */
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: floatingParticles 6s infinite ease-in-out;
+}
+
+.particle:nth-child(odd) {
+    animation-duration: 8s;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes floatingParticles {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
