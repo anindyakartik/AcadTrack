@@ -1,0 +1,128 @@
+/* Dark Theme with Glassmorphism */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover, .active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Dashboard Section */
+.dashboard {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dashboard-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc5c;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #ffcc5c);
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Chart Section */
+.chart-section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.chart-section h2 {
+    color: #ffcc5c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Make the chart responsive */
+canvas {
+    width: 100% !important;
+    max-height: 300px;
+}
