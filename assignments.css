@@ -1,0 +1,145 @@
+/* Assignments Page - Aesthetic, Modern Design */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #312a67);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #252547;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 3px solid #ff9800;
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #252547;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover, .active {
+    background: #ff9800;
+    color: #121212;
+}
+
+/* Filter Section */
+.filter-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#status-filter {
+    padding: 12px;
+    border: 2px solid #ff9800;
+    background: #252547;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#status-filter:hover {
+    background: #ff9800;
+    color: #252547;
+}
+
+/* Assignments Grid */
+.assignments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Assignment Card */
+.assignment-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.assignment-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.5);
+}
+
+.assignment-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff9800;
+}
+
+.assignment-details {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.assignment-details p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.status {
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Color-coded statuses */
+.status.completed {
+    background: #4caf50;
+    color: #fff;
+}
+
+.status.pending {
+    background: #f44336;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #252547;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 20px;
+}

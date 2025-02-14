@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - AcadTrack</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assignments.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Assignments</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="assignments.html" class="active">Assignments</a></li>
+                <li><a href="exams.html">Exams</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="time.html">Time Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="status-filter">Filter by Status:</label>
+            <select id="status-filter" onchange="filterAssignments()">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="pending">Pending</option>
+            </select>
+        </div>
+
+        <!-- Assignments Container -->
+        <section class="assignments-container" id="assignments-list">
+            <div class="assignment-card" data-status="pending">
+                <h3>Math Assignment</h3>
+                <p><strong>Course:</strong> Calculus 101</p>
+                <p><strong>Due Date:</strong> Feb 20, 2025</p>
+                <span class="status pending">Pending</span>
+            </div>
+            <div class="assignment-card" data-status="completed">
+                <h3>AI Project Report</h3>
+                <p><strong>Course:</strong> Artificial Intelligence</p>
+                <p><strong>Due Date:</strong> Feb 15, 2025</p>
+                <span class="status completed">Completed</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AcadTrack. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assignments.js"></script>
+
+</body>
+</html>
